@@ -17,7 +17,7 @@ stdenv.mkDerivation {
     python pythonPackages.virtualenv pythonPackages.pip
   ];
   propagatedBuildInputs = with pkgs; [
-    rdkafka protobuf
+
   ];
   shellHook = ''
     export SOURCE_DATE_EPOCH=$(date +%s)
